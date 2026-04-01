@@ -24,11 +24,11 @@ author:
   avatar           : "profile.png"
   name             : "Jiaxin Zhang（张佳鑫）"
   pronouns         : # example: "she/her"  
-  bio              : "M.S. Student @ HIT | 3D Vision & VLM Research"
+  bio              : "M.S. Student @ HIT<br>3D Vision & VLM Research"
   location         : "ShenZhen, China"
   employer         : "Harbin Institute of Technology"
   uri              : # URL
-  email            : "120l020416@stu.hit.edu.cn" 
+  120l020416@stu.hit.edu.cn            : "120l020416@stu.hit.edu.cn" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
