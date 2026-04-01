@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jiaxin Zhang"
+title: ""
 excerpt: "M.S. Student @ HIT | 3D Vision & VLM Research"
 author_profile: true
 redirect_from: 
