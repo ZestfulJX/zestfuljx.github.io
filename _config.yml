@@ -21,7 +21,7 @@ repository               : "https://zestfuljx.github.io/"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "me.png"
   name             : "Jiaxin Zhang（张佳鑫）"
   pronouns         : # example: "she/her"  
   bio              : "M.S. Student @ HIT<br>3D Vision & VLM Research"
