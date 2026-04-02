@@ -3,6 +3,7 @@ permalink: /
 title: ""
 excerpt: "M.S. Student @ HIT | 3D Vision & VLM Research"
 author_profile: true
+classes: wide
 redirect_from: 
   - /about/
   - /about.html
