@@ -40,11 +40,6 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* ===== Custom layout width ===== */
-.layout--single.wide .page__inner-wrap {
-  max-width: 1400px !important;
-}
-
 .layout--single.wide .page__content {
   max-width: 1200px !important;
 }
