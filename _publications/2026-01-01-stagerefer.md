@@ -9,5 +9,5 @@ codeurl: "https://github.com/yourname/stagerefer"
 projecturl: "https://yourprojectpage.github.io/"
 excerpt: "A two-stage framework for anchor-conditioned 3D visual grounding."
 header:
-  teaser: "me.png"
+  teaser: "cob-gs.png"
 ---
