@@ -117,7 +117,7 @@ Publications
 
 /* ⭐ 悬浮效果升级 */
 .pub-thumb img:hover {
-  transform: scale(1.15);
+  transform: scale(3.0);
   z-index: 10;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
