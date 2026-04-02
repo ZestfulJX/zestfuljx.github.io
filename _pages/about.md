@@ -94,27 +94,32 @@ Publications
 <style>
 .pub-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;  /* ⭐ 改成居中对齐 */
   gap: 20px;
-  margin-bottom: 1.8em;
+  margin-bottom: 2em;
 }
 
 .pub-thumb {
   flex: 0 0 auto;
   width: min(30%, 220px);
   border-radius: 6px;
-  overflow: hidden;
+  /* ❌ 去掉 overflow:hidden */
 }
 
 .pub-thumb img {
   width: 100%;
   display: block;
   border-radius: 6px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
+/* ⭐ 悬浮效果升级 */
 .pub-thumb img:hover {
-  transform: scale(1.08);
+  transform: scale(1.15);
+  z-index: 10;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
 .pub-text {
@@ -125,9 +130,11 @@ Publications
   margin-right: 10px;
 }
 
+/* 📱 移动端 */
 @media screen and (max-width: 768px) {
   .pub-item {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .pub-thumb {
@@ -149,7 +156,7 @@ Publications
   </div>
 
   <div class="pub-text">
-    <strong>{{ post.title }}</strong><br>
+    <strong style="font-size:1.05em;">{{ post.title }}</strong><br>
 
     {% if post.authors %}
     {{ post.authors | replace: "Jiaxin Zhang", "<strong>Jiaxin Zhang</strong>" }}<br>
