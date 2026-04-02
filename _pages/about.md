@@ -153,5 +153,9 @@ Publications
 </div>
 {% endfor %}
 
+<!-- <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=300"></script> -->
 
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=300"></script>
+<script type="text/javascript"
+        id="mapmyvisitors"
+        src="https://mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=300">
+</script>
