@@ -44,7 +44,7 @@ Publications
 ======
 
 
-{% assign pubs = site.publications | sort: "date" | reverse %}
+<!-- {% assign pubs = site.publications | sort: "date" | reverse %}
 
 {% for post in pubs %}
 <table style="border: 0; border-collapse: collapse; margin-bottom: 1.5em;">
@@ -62,7 +62,7 @@ Publications
       {% endif %}
       
       {% if post.venue %}
-      <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}<br>
+      <em>{{ post.venue }}</em><br>
       {% endif %}
       
       {% if post.excerpt %}
@@ -89,4 +89,101 @@ Publications
     </td>
   </tr>
 </table>
+{% endfor %} -->
+
+<style>
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 1.8em;
+}
+
+.pub-thumb {
+  flex: 0 0 auto;
+  width: min(30%, 220px);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pub-thumb img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.pub-thumb img:hover {
+  transform: scale(1.08);
+}
+
+.pub-text {
+  flex: 1;
+}
+
+.pub-links a {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .pub-item {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+</style>
+
+{% assign pubs = site.publications | sort: "date" | reverse %}
+
+{% for post in pubs %}
+<div class="pub-item">
+
+  <div class="pub-thumb">
+    {% if post.header.teaser %}
+    <img src="/images/{{ post.header.teaser }}" alt="{{ post.title }}">
+    {% endif %}
+  </div>
+
+  <div class="pub-text">
+    <strong>{{ post.title }}</strong><br>
+
+    {% if post.authors %}
+    {{ post.authors | replace: "Jiaxin Zhang", "<strong>Jiaxin Zhang</strong>" }}<br>
+    {% endif %}
+
+    {% if post.venue %}
+    <em>{{ post.venue }}</em><br>
+    {% endif %}
+
+    {% if post.excerpt %}
+    <div style="margin-top: 0.4em; margin-bottom: 0.4em;">
+      {{ post.excerpt }}
+    </div>
+    {% endif %}
+
+    <div class="pub-links">
+      {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">[Paper]</a>
+      {% endif %}
+
+      {% if post.codeurl %}
+      <a href="{{ post.codeurl }}">[Code]</a>
+      {% endif %}
+
+      {% if post.projecturl %}
+      <a href="{{ post.projecturl }}">[Project]</a>
+      {% endif %}
+
+      {% if post.slidesurl %}
+      <a href="{{ post.slidesurl }}">[Slides]</a>
+      {% endif %}
+    </div>
+
+  </div>
+
+</div>
 {% endfor %}
