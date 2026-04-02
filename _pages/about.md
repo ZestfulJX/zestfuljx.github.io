@@ -71,7 +71,7 @@ Publications
 
 /* ⭐ 悬浮效果升级 */
 .pub-thumb img:hover {
-  transform: scale(3.0);
+  transform: scale(2.5);
   z-index: 10;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
@@ -117,7 +117,11 @@ Publications
     {% endif %}
 
     {% if post.venue %}
-    <em>{{ post.venue }}</em><br>
+      {% if post.venue contains "arXiv" %}
+        <em style="color: #3498db;">{{ post.venue }}</em><br>
+      {% else %}
+        <em style="color: #e74c3c;">{{ post.venue }}</em><br>
+      {% endif %}
     {% endif %}
 
     {% if post.excerpt %}
@@ -148,3 +152,5 @@ Publications
 
 </div>
 {% endfor %}
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=a"></script>
