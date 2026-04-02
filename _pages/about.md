@@ -153,8 +153,5 @@ Publications
 </div>
 {% endfor %}
 
-<div style="width:300px; margin: 0 auto;">
-  <script type="text/javascript"
-    src="//mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=a">
-  </script>
-</div>
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=pZeIBZXwpSk2w7PDBVXclXrcFCviVr0XEpjn6fV_oZQ&cl=ffffff&w=300"></script>
