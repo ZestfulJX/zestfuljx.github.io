@@ -16,7 +16,7 @@ About me
 
 Welcome! I am Jiaxin Zhang(张佳鑫, Jason), a master student in Computer Science at [Harbin Institute of Technology (HIT)](https://www.hit.edu.cn/), supervised by [Prof. Junjun Jiang](https://homepage.hit.edu.cn/jiangjunjun). Currently, I am an intern at the Multimodal Large Model Lab of Huawei 2012 Laboratories, where I am mentored by [Dave Zhenyu Chen](https://daveredrum.github.io/). Prior to this, I earned my Bachelor’s degree in Computer Science from [HIT](https://www.hit.edu.cn/).
 
-My research interests focus on **3D vision** and **vision-language model (VLM)-based 3D spatial perception and reasoning**. Beyond research, I am a backpacker—either my body or my mind is always on the road.
+My research focuses on **3D vision**, **geometry-aware multimodal spatial understanding**, and **world-consistent video generation**, with the long-term goal of building spatially intelligent systems for embodied AI. Beyond research, I am a backpacker—either my body or my mind is always on the road.
 
 <div id="internships"></div>
 
