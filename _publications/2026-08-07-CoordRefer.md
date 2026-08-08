@@ -9,4 +9,5 @@ paperurl: "https://arxiv.org/abs/2608.05569"
 projecturl: "https://lhj-git.github.io/CoordRefer/"
 header:
   teaser: "coordrefer.png"
+hover_scale: 3.5
 ---
