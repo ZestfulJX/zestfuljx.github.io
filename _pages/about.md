@@ -18,6 +18,15 @@ Welcome! I am Jiaxin Zhang(张佳鑫, Jason), a master student in Computer Scien
 
 My research focuses on **3D vision**, **geometry-aware multimodal spatial understanding**, and **world-consistent video generation**, with the long-term goal of building spatially intelligent systems for embodied AI. Beyond research, I am a backpacker—either my body or my mind is always on the road.
 
+<div id="news"></div>
+
+🪐 News
+======
+
+* **2026.06** Two papers were accepted by **ECCV 2026**.
+* **2025.09** One paper was accepted by **NeurIPS 2025**.
+* **2025.03** One paper was accepted by **CVPR 2025**.
+
 <div id="internships"></div>
 
 Internships
