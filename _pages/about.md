@@ -57,6 +57,7 @@ Publications
   flex: 0 0 auto;
   width: min(30%, 220px);
   border-radius: 6px;
+  --hover-scale: 2.5;
   /* ❌ 去掉 overflow:hidden */
 }
 
@@ -71,7 +72,7 @@ Publications
 
 /* ⭐ 悬浮效果升级 */
 .pub-thumb img:hover {
-  transform: scale(2.5);
+  transform: scale(var(--hover-scale));
   z-index: 10;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
@@ -103,7 +104,7 @@ Publications
 {% for post in pubs %}
 <div class="pub-item">
 
-  <div class="pub-thumb">
+  <div class="pub-thumb"{% if post.hover_scale %} style="--hover-scale: {{ post.hover_scale }};"{% endif %}>
     {% if post.header.teaser %}
     <img src="/images/{{ post.header.teaser }}" alt="{{ post.title }}">
     {% endif %}
