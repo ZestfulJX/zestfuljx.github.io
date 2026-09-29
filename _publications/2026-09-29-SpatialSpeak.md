@@ -9,5 +9,5 @@ codeurl: "https://github.com/yangcaoai/SpatialSpeak-VLM"
 projecturl: "https://yangcaoai.github.io/SpatialSpeak/"
 header:
   teaser: "spatial speak.png"
-hover_scale: 3.5
+hover_scale: 3.0
 ---
